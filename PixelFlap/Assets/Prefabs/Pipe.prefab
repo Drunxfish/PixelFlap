@@ -219,6 +219,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6950835611767263338}
+  - component: {fileID: 3439530146146556705}
   m_Layer: 0
   m_Name: Pipe
   m_TagString: Untagged
@@ -244,6 +245,27 @@ Transform:
   - {fileID: 7649234712466741834}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3439530146146556705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4396267405647918838}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 31, z: 2}
+  m_Center: {x: 0, y: -15.2, z: 0}
 --- !u!1 &4845966753456765326
 GameObject:
   m_ObjectHideFlags: 0
