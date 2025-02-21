@@ -1,24 +1,22 @@
 # 📝 PixelFlap - Flappy Bird Clone
 
-PixelFlap is a simple, straightforward clone of the popular Flappy Bird game. It's still in development, but it offers basic mechanics and gameplay with pixelated graphics. The goal is to navigate the bird through pipes without hitting them, and it's designed to be fun and challenging.
+PixelFlap is a simple and straightforward clone of the popular Flappy Bird game. It features basic mechanics and pixelated graphics. The goal is to navigate the bird through pipes without hitting them, providing a fun and challenging experience.
 
 ## 🔹 Features
 - ✅ Basic Flappy Bird Gameplay  
-- ✅ Pixelated Graphics  
+- ✅ Pixelatedish Graphics  
 - ✅ Simple Controls (Tap to flap)  
-- ✅ Still under development – more features coming soon!
+- ✅ Fully functional
 
 ## 💻 Tech Stack
-
 - **Game Engine:** Unity  
-- **Languages:** C#  
-- **Graphics:** ...
+- **Programming Language:** C#  
+- **Graphics:** 2D/3D
 
 ## 📜 License  
-
 PixelFlap is open-source and licensed under the **MIT License**.  
-Feel free to use, modify, and distribute it as long as you provide proper attribution.  
+Feel free to use, modify, and distribute the game as long as proper attribution is provided.
 
 ---
 
-🚀 **Enjoy the challenge of PixelFlap! :D**  
+🚀 **Enjoy the challenge of PixelFlap! :D**

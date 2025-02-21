@@ -1,4 +1,4 @@
-MIT License
+## MIT License
 
 Copyright (c) 2025 Alexandre
 
@@ -19,3 +19,38 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## Third-Party Assets
+
+### 🎨 Image Attributions  
+
+- **Pexels** ([Pexels - Free Stock Photos](https://www.pexels.com))  
+  - **License**: Free for personal and commercial use, no attribution required.  
+
+- **Freepik** ([Freepik - Free Vector Art, Stock Photos, and PSD](https://www.freepik.com))  
+  - **License**: Free for personal and commercial use, attribution required.  
+  - **Attribution**:  
+    - `Assets/Images/pixel_star.png` by Freepik  
+    - `Assets/Images/day-and-night.png` by Freepik  
+
+### 🎵 Sound Effects Attribution  
+
+- **Pixabay** ([Pixabay - Free Stock Sounds](https://pixabay.com/sound-effects/))  
+  - **License**: Free for personal & commercial use, **no attribution required**.  
+  - **SFX Used**:  
+    - `Assets/Audio/Menu.mp3`  
+    - `Assets/Audio/death.mp3`  
+    - `Assets/Audio/medieval-fanfare-6826.mp3`  
+    - `Assets/Audio/Wing_flap.mp3`  
+    - `Assets/Audio/collision.mp3`  
+
+### 🏗 Unity Asset Store Attribution  
+
+- **Unity Asset Store** ([Unity Asset Store - Free Assets](https://assetstore.unity.com/))  
+  - **License**: Used under Unity’s Standard Asset Store EULA.  
+  - **Assets Used**:  
+    - `Assets/SimplePixelUI`  
+    - `Assets/SFX/Miru, Far From Home - 8bit retro inspired free album`  
+  - *No attribution required unless stated by the asset creator.*  
