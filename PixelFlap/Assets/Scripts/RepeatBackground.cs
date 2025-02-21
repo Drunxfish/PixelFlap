@@ -6,15 +6,17 @@ public class BackgroundScript : MonoBehaviour
 {
     public Vector3 startPos;
     private float repeatWidth;
-    private BirdController FlappyGame;
+    private GameManager gameManager;
 
-
-    private float speed = 5;
+    public float speed = 5f;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        FlappyGame = FindObjectOfType<BirdController>();
+        // GameManager
+        gameManager = FindObjectOfType<GameManager>();
+
+        // Get current position
         startPos = transform.position;
         repeatWidth = GetComponent<BoxCollider>().size.x / 2;
     }
@@ -22,15 +24,15 @@ public class BackgroundScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!FlappyGame.gameOver)
+        // Only move background whilst game's active
+        if (gameManager.IsPlaying)
         {
             if (transform.position.x < startPos.x - repeatWidth)
             {
                 transform.position = startPos;
             }
+            // Update Vector
             transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
-
     }
-
 }

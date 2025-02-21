@@ -8,32 +8,25 @@ public class BackgroundMusic : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip[] playlist;
     private int currentTrackIndex = 0;
-    private BirdController FlappyGame;
-
+    private GameManager gameManager;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        FlappyGame = FindObjectOfType<BirdController>();
-
-        if (playlist.Length > 0)
-        {
-            PlayNextSong();
-        }
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!FlappyGame.gameOver)
+        // Play next next song
+        if (!audioSource.isPlaying && playlist.Length > 0 && gameManager.IsPlaying)
         {
-            // Play next next song
-            if (!audioSource.isPlaying && playlist.Length > 0)
-            {
-                PlayNextSong();
-            }
+            PlayNextSong();
         }
     }
+
+
     void PlayNextSong()
     {
         // Reset Playlist 
