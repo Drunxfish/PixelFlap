@@ -1,7 +1,7 @@
 # 📝 PixelFlap - Flappy Bird Clone
 
 PixelFlap is a simple and straightforward clone of the popular Flappy Bird game. It features basic mechanics and pixelated graphics. The goal is to navigate the bird through pipes without hitting them, providing a fun and challenging experience.
-![Game Demo](assets/images/your-gif.gif)
+![Game Demo](PixelFlap/assets/images/pixelflap.gif)
 
 
 ## 🔹 Features
