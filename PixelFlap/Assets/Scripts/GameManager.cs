@@ -1,13 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using System;
-using UnityEngine.UIElements;
-using UnityEditor.AssetImporters;
-using UnityEngine.SocialPlatforms.Impl;
-using System.Drawing;
+
 
 public class GameManager : MonoBehaviour
 {

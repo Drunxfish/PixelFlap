@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SocialPlatforms.Impl;
 
 
 public class PipeGateSpawner : MonoBehaviour
