@@ -11,7 +11,7 @@ PixelFlap is a simple and straightforward clone of the popular Flappy Bird game.
 - ✅ Basic Flappy Bird Gameplay  
 - ✅ Pixelatedish Graphics  
 - ✅ Simple Controls (Tap to flap)  
-- ✅ Fully functional
+- ✅ Background Music :D
 
 ## 💻 Tech Stack
 - **Game Engine:** Unity  
