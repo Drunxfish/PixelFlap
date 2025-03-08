@@ -7,16 +7,12 @@ public class GameManager : MonoBehaviour
     [Header("Game Components")]
     public Player player;
     public TextMeshProUGUI ScoreText;
-    public GameObject PlayButton;
     public GameObject gameOver;
-    public GameObject MenuButton;
     public GameObject WelcomeTitle;
-    public GameObject Victory;
-    public GameObject Instructions;
-    public AudioClip VictoryClip;
     private PipeGateSpawner pipeSpawner;
     private BackgroundScript backgroundScript;
 
+    public GameObject gameMenu;
 
     public int Score;
     public bool IsPlaying;
@@ -40,8 +36,7 @@ public class GameManager : MonoBehaviour
         // Remove/Pop UI
         player.enabled = false;
         WelcomeTitle.SetActive(true);
-        Instructions.SetActive(true);
-        Victory.SetActive(false);
+        gameMenu.SetActive(true);
         gameOver.SetActive(false);
 
 
@@ -63,7 +58,7 @@ public class GameManager : MonoBehaviour
         // ...
         InitializeGame();
 
-        // set time to normal and enable player
+        // Set time to normal and enable player
         Time.timeScale = 1f;
         player.enabled = true;
 
@@ -84,12 +79,9 @@ public class GameManager : MonoBehaviour
         IsPlaying = true;
         hasWon = false;
         ScoreText.text = $"SCORE: {Score}";
-        PlayButton.SetActive(false);
         gameOver.SetActive(false);
         WelcomeTitle.SetActive(false);
-        MenuButton.SetActive(false);
-        Victory.SetActive(false);
-        Instructions.SetActive(false);
+        gameMenu.SetActive(false);
     }
 
     // Pause illusion function
@@ -114,9 +106,7 @@ public class GameManager : MonoBehaviour
 
         // Bring up the Menu
         gameOver.SetActive(true);
-        PlayButton.SetActive(true);
-        MenuButton.SetActive(true);
-        Instructions.SetActive(true);
+        gameMenu.SetActive(true);
         Pause();
     }
 
@@ -130,12 +120,6 @@ public class GameManager : MonoBehaviour
         Score++;
         ScoreText.text = $"SCORE: {Score}";
         ChangeDifficulty();
-
-        // condition for win
-        if (Score >= 50)
-        {
-            WinGame();
-        }
     }
 
 
@@ -145,25 +129,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("Difficulty Changed");
         pipeSpawner.PipesSpeed += 0.2f;
         backgroundScript.speed += 0.2f;
-    }
-
-    // Victory screen
-    public void WinGame()
-    {
-        // Set corresponding variables for upcoming check
-        Debug.Log("Player Made Every Checkpoint Successfully");
-        IsPlaying = false;
-        hasWon = true;
-
-        // Bring up the Menu/Play fitting clip/pause game
-        gameOver.SetActive(false);
-        PlayButton.SetActive(true);
-        MenuButton.SetActive(true);
-        Victory.SetActive(true);
-        Instructions.SetActive(false);
-        CameraAudio.Stop();
-        CameraAudio.PlayOneShot(VictoryClip, 1f);
-        Pause();
     }
 
 }
